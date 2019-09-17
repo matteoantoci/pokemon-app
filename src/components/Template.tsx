@@ -3,7 +3,8 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import styled from 'styled-components'
-import { AppBar } from '@material-ui/core'
+import { AppBar, IconButton } from '@material-ui/core'
+import HomeIcon from '@material-ui/icons/Home'
 import Toolbar from '@material-ui/core/Toolbar'
 import { Flex } from './Flex'
 
@@ -19,8 +20,8 @@ const Wrapper = styled(Flex)`
 `
 
 const Main = styled(Container)`
-  margin-top: 64px;
-  margin-bottom: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 `
 
 const Footer = styled.footer`
@@ -29,11 +30,25 @@ const Footer = styled.footer`
   background-color: white;
 `
 
-export const Template: React.FC = ({ children }) => (
+const HomeButton = styled(IconButton).attrs({
+  edge: 'start',
+  color: 'inherit',
+})`
+  margin-right: 8px !important;
+`
+
+type TemplateProps = {
+  onGoBack: () => void
+}
+
+export const Template: React.FC<TemplateProps> = ({ children, onGoBack }) => (
   <Wrapper>
     <CssBaseline />
     <AppBar position="relative">
       <Toolbar>
+        <HomeButton onClick={onGoBack}>
+          <HomeIcon />
+        </HomeButton>
         <Typography variant="h6" color="inherit" noWrap>
           PokemonIndex
         </Typography>

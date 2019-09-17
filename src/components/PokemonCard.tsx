@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Typography from '@material-ui/core/Typography'
 import { CardMedia, Grid, LinearProgress } from '@material-ui/core'
 import Card from '@material-ui/core/Card'
-import React from 'react'
+import React, { useCallback } from 'react'
 import CardContent from '@material-ui/core/CardContent'
 import CardActions from '@material-ui/core/CardActions'
 import Button from '@material-ui/core/Button'
@@ -93,48 +93,64 @@ const getPercentage = (value: number) => Math.round((value * 100) / MAX_SCALE)
 
 type PokemonCardProps = {
   pokemon: Pokemon
+  onPokemonDetailsClick?: (id: string) => void
 }
 
-export const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon, ...props }) => (
-  <Grid {...props} item xs={12} sm={6} md={4}>
-    <PokemonCardContents>
-      <PokemonImg image={pokemon.image} title={pokemon.name} />
-      <CardContent>
-        <InfoWrapper>
-          <Name variant="h5" component="h2">
-            {pokemon.name}
-          </Name>
-          <Number color="textSecondary" variant="h5" component="p">
-            {`#${pokemon.number}`}
-          </Number>
-        </InfoWrapper>
-        <InfoWrapper>
-          <BadgeContainer>
-            {pokemon.types.map(type => (
-              <TypeBadge key={type} type={type}>
-                {type}
-              </TypeBadge>
-            ))}
-          </BadgeContainer>
-        </InfoWrapper>
-        <InfoWrapper>
-          <Flex>HP</Flex>
-          <Tooltip title={`Max HP: ${pokemon.maxHP}`}>
-            <Progress variant="determinate" value={getPercentage(pokemon.maxHP)} />
-          </Tooltip>
-        </InfoWrapper>
-        <InfoWrapper>
-          <Flex>CP</Flex>
-          <Tooltip title={`Max CP: ${pokemon.maxCP}`}>
-            <Progress variant="determinate" value={getPercentage(pokemon.maxCP)} />
-          </Tooltip>
-        </InfoWrapper>
-      </CardContent>
-      <CardActions>
-        <Button size="small" color="primary">
-          More information
-        </Button>
-      </CardActions>
-    </PokemonCardContents>
-  </Grid>
-)
+export const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon, onPokemonDetailsClick, ...props }) => {
+  const handleShowDetails = useCallback(() => {
+    if (!onPokemonDetailsClick) return
+    onPokemonDetailsClick(pokemon.id)
+  }, [pokemon, onPokemonDetailsClick])
+  return (
+    <Grid {...props} item xs={12} sm={6} md={4}>
+      <PokemonCardContents>
+        <PokemonImg image={pokemon.image} title={pokemon.name} />
+        <CardContent>
+          <InfoWrapper>
+            <Name variant="h5" component="h2">
+              {pokemon.name}
+            </Name>
+            <Number color="textSecondary" variant="h5" component="p">
+              {`#${pokemon.number}`}
+            </Number>
+          </InfoWrapper>
+          <InfoWrapper>
+            <Flex>ID:</Flex>
+            <Typography variant="body2" color="textSecondary">
+              {pokemon.id}
+            </Typography>
+          </InfoWrapper>
+          <InfoWrapper>
+            <Flex>Type:</Flex>
+            <BadgeContainer>
+              {pokemon.types.map(type => (
+                <TypeBadge key={type} type={type}>
+                  {type}
+                </TypeBadge>
+              ))}
+            </BadgeContainer>
+          </InfoWrapper>
+          <InfoWrapper>
+            <Flex>HP:</Flex>
+            <Tooltip title={`Max HP: ${pokemon.maxHP}`}>
+              <Progress variant="determinate" value={getPercentage(pokemon.maxHP)} />
+            </Tooltip>
+          </InfoWrapper>
+          <InfoWrapper>
+            <Flex>CP:</Flex>
+            <Tooltip title={`Max CP: ${pokemon.maxCP}`}>
+              <Progress variant="determinate" value={getPercentage(pokemon.maxCP)} />
+            </Tooltip>
+          </InfoWrapper>
+        </CardContent>
+        {onPokemonDetailsClick && (
+          <CardActions>
+            <Button size="small" color="primary" onClick={handleShowDetails}>
+              More information
+            </Button>
+          </CardActions>
+        )}
+      </PokemonCardContents>
+    </Grid>
+  )
+}
