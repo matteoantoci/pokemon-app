@@ -46,7 +46,7 @@ export const Template: React.FC<TemplateProps> = ({ children, onGoBack }) => (
     <CssBaseline />
     <AppBar position="relative">
       <Toolbar>
-        <HomeButton onClick={onGoBack}>
+        <HomeButton onClick={onGoBack} data-test="home-btn">
           <HomeIcon />
         </HomeButton>
         <Typography variant="h6" color="inherit" noWrap>

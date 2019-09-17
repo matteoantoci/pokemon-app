@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Template renders correctly 1`] = `
+<div
+  className="sc-bwzfXH hJoDfx sc-bdVaJa kZAgjJ"
+>
+  <header
+    className="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <button
+        className="MuiButtonBase-root MuiIconButton-root sc-ifAKCX bEYIDc MuiIconButton-colorInherit MuiIconButton-edgeStart"
+        data-test="home-btn"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[MockFunction]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <h6
+        className="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit MuiTypography-noWrap"
+      >
+        PokemonIndex
+      </h6>
+    </div>
+  </header>
+  <main
+    className="MuiContainer-root sc-htpNat ljHVDm MuiContainer-maxWidthMd"
+  >
+    contents
+  </main>
+  <footer
+    className="sc-bxivhb cIAaJV"
+  >
+    <div
+      className="MuiContainer-root MuiContainer-maxWidthSm"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+      >
+        Copyright © Matteo Antoci 2019
+      </p>
+    </div>
+  </footer>
+</div>
+`;

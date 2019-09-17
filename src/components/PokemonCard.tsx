@@ -85,6 +85,7 @@ const TypeBadge: React.FC<TypeBadgeProps> = styled(Flex)`
   padding: 4px 6px;
   color: white;
   margin-left: 4px;
+  user-select: none;
 `
 
 const MAX_SCALE = 3000
@@ -145,7 +146,7 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon, onPokemonDeta
         </CardContent>
         {onPokemonDetailsClick && (
           <CardActions>
-            <Button size="small" color="primary" onClick={handleShowDetails}>
+            <Button size="small" color="primary" onClick={handleShowDetails} data-test="more-info-btn">
               More information
             </Button>
           </CardActions>

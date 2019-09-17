@@ -1,0 +1,477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home on error renders correctly 1`] = `
+<div
+  className="sc-gZMcBi ejcDsQ sc-bdVaJa kZAgjJ"
+>
+  <div
+    className="sc-gqjmRU gGcLvr sc-bdVaJa kZAgjJ"
+  >
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+      />
+    </svg>
+  </div>
+  <h5
+    className="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter"
+  >
+    Error while loading contents =(
+  </h5>
+</div>
+`;
+
+exports[`Home when load succeeds when retrieving a specific pokemon renders correctly 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiCard-root sc-bwzfXH gPmFGo MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardMedia-root sc-htpNat bxEaqd"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://someimage.com\\")",
+          }
+        }
+        title="name"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <h2
+            className="MuiTypography-root sc-ifAKCX bUzTRP MuiTypography-h5"
+          >
+            name
+          </h2>
+          <p
+            className="MuiTypography-root sc-EHOje jPiFzx MuiTypography-h5 MuiTypography-colorTextSecondary"
+          >
+            #number
+          </p>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            ID:
+          </div>
+          <p
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+          >
+            id
+          </p>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            Type:
+          </div>
+          <div
+            className="sc-gzVnrw iKWuGe sc-bdVaJa kZAgjJ"
+          >
+            <div
+              className="sc-htoDjs dCzLKI sc-bdVaJa kZAgjJ"
+              type="Ghost"
+            >
+              Ghost
+            </div>
+            <div
+              className="sc-htoDjs gbdiEo sc-bdVaJa kZAgjJ"
+              type="Normal"
+            >
+              Normal
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            HP:
+          </div>
+          <div
+            aria-describedby={null}
+            aria-valuenow={15}
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary sc-bZQynM hzDXFo MuiLinearProgress-determinate"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="progressbar"
+            title="Max HP: 456"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+              style={
+                Object {
+                  "transform": "translateX(-85%)",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            CP:
+          </div>
+          <div
+            aria-describedby={null}
+            aria-valuenow={4}
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary sc-bZQynM hzDXFo MuiLinearProgress-determinate"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="progressbar"
+            title="Max CP: 123"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+              style={
+                Object {
+                  "transform": "translateX(-96%)",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home when load succeeds when retrieving pokemon list renders correctly 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiCard-root sc-bwzfXH gPmFGo MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardMedia-root sc-htpNat bxEaqd"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://someimage.com\\")",
+          }
+        }
+        title="name"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <h2
+            className="MuiTypography-root sc-ifAKCX bUzTRP MuiTypography-h5"
+          >
+            name
+          </h2>
+          <p
+            className="MuiTypography-root sc-EHOje jPiFzx MuiTypography-h5 MuiTypography-colorTextSecondary"
+          >
+            #number
+          </p>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            ID:
+          </div>
+          <p
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+          >
+            id1
+          </p>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            Type:
+          </div>
+          <div
+            className="sc-gzVnrw iKWuGe sc-bdVaJa kZAgjJ"
+          >
+            <div
+              className="sc-htoDjs dCzLKI sc-bdVaJa kZAgjJ"
+              type="Ghost"
+            >
+              Ghost
+            </div>
+            <div
+              className="sc-htoDjs gbdiEo sc-bdVaJa kZAgjJ"
+              type="Normal"
+            >
+              Normal
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            HP:
+          </div>
+          <div
+            aria-describedby={null}
+            aria-valuenow={15}
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary sc-bZQynM hzDXFo MuiLinearProgress-determinate"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="progressbar"
+            title="Max HP: 456"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+              style={
+                Object {
+                  "transform": "translateX(-85%)",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            CP:
+          </div>
+          <div
+            aria-describedby={null}
+            aria-valuenow={4}
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary sc-bZQynM hzDXFo MuiLinearProgress-determinate"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="progressbar"
+            title="Max CP: 123"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+              style={
+                Object {
+                  "transform": "translateX(-96%)",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiCard-root sc-bwzfXH gPmFGo MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardMedia-root sc-htpNat bxEaqd"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://someimage.com\\")",
+          }
+        }
+        title="name"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <h2
+            className="MuiTypography-root sc-ifAKCX bUzTRP MuiTypography-h5"
+          >
+            name
+          </h2>
+          <p
+            className="MuiTypography-root sc-EHOje jPiFzx MuiTypography-h5 MuiTypography-colorTextSecondary"
+          >
+            #number
+          </p>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            ID:
+          </div>
+          <p
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+          >
+            id2
+          </p>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            Type:
+          </div>
+          <div
+            className="sc-gzVnrw iKWuGe sc-bdVaJa kZAgjJ"
+          >
+            <div
+              className="sc-htoDjs dCzLKI sc-bdVaJa kZAgjJ"
+              type="Ghost"
+            >
+              Ghost
+            </div>
+            <div
+              className="sc-htoDjs gbdiEo sc-bdVaJa kZAgjJ"
+              type="Normal"
+            >
+              Normal
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            HP:
+          </div>
+          <div
+            aria-describedby={null}
+            aria-valuenow={15}
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary sc-bZQynM hzDXFo MuiLinearProgress-determinate"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="progressbar"
+            title="Max HP: 456"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+              style={
+                Object {
+                  "transform": "translateX(-85%)",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="sc-bxivhb iXtRbx sc-bdVaJa kZAgjJ"
+        >
+          <div
+            className="sc-bdVaJa kZAgjJ"
+          >
+            CP:
+          </div>
+          <div
+            aria-describedby={null}
+            aria-valuenow={4}
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary sc-bZQynM hzDXFo MuiLinearProgress-determinate"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            role="progressbar"
+            title="Max CP: 123"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+              style={
+                Object {
+                  "transform": "translateX(-96%)",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home when loading renders correctly 1`] = `
+<div
+  className="sc-dnqmqq jaZGKM sc-bdVaJa kZAgjJ"
+>
+  <div
+    className="sc-iwsKbI dqlCjD sc-bdVaJa kZAgjJ"
+  >
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"
+      />
+    </svg>
+  </div>
+  <h5
+    className="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter"
+  >
+    Loading Pokemon list...
+  </h5>
+</div>
+`;
